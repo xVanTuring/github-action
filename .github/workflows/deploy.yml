@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Build Zip
-        run: ls -la
+        run: git branch
 
       - name: Create Release
         id: create_release
