@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Build Zip
-        run: git archive --format zip --output ../sublender.zip master --prefix sublender/
+        run: cd github-action && git archive --format zip --output ../sublender.zip master --prefix sublender/
 
       - name: Create Release
         id: create_release
